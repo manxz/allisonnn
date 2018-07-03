@@ -1,0 +1,505 @@
+.navbar {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  height: 56px;
+  background-color: #fff;
+  font-size: 15px;
+}
+
+.logotext {
+  padding-top: 14px;
+  font-family: Colfax, sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.navlink {
+  display: inline-block;
+  height: 56px;
+  padding-top: 17px;
+  clear: left;
+  font-family: Colfax, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.navlink.w--current {
+  color: #00ffe0;
+}
+
+.nav-menu {
+  margin-left: 64px;
+  float: left;
+}
+
+.demoreel {
+  height: 464px;
+  margin-bottom: 16px;
+  background-image: -webkit-linear-gradient(270deg, #00ffe0, #fff);
+  background-image: linear-gradient(180deg, #00ffe0, #fff);
+  background-position: 0px 0px;
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+.videoarea {
+  margin-top: 56px;
+}
+
+.h1 {
+  font-family: Colfax, sans-serif;
+  font-size: 23px;
+  line-height: 32px;
+}
+
+.link-block {
+  width: 80px;
+  height: 80px;
+  float: left;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .24);
+}
+
+.link-block:hover {
+  background-image: url('../images/hover.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: scroll;
+}
+
+.link-block.starbucks {
+  background-image: url('../images/starbucks.png');
+  background-position: 0px 0px;
+  background-size: 80px;
+}
+
+.link-block.starbucks:hover {
+  background-image: url('../images/hover.png'), url('../images/starbucks.png');
+  background-position: 0px 0px, 0px 0px;
+  background-size: 80px, 80px;
+  background-repeat: repeat, repeat;
+  background-attachment: scroll, scroll;
+}
+
+.link-block.starbucks:active {
+  background-image: url('../images/hover_pause.png'), url('../images/starbucks.png');
+  background-size: 80px, 80px;
+}
+
+.link-block.fitbit {
+  background-image: url('../images/fitbit.png');
+  background-position: 0px 0px;
+  background-size: 80px;
+}
+
+.link-block.fitbit:hover {
+  background-image: url('../images/hover.png'), url('../images/fitbit.png');
+  background-position: 0px 0px, 0px 0px;
+  background-size: 80px, 80px;
+  background-repeat: repeat, repeat;
+  background-attachment: scroll, scroll;
+}
+
+.link-block.musicinfilm {
+  background-image: url('../images/placeholder.png');
+  background-position: 0px 0px;
+  background-size: 80px;
+}
+
+.link-block.musicinfilm:hover {
+  background-image: url('../images/hover.png'), url('../images/placeholder.png');
+  background-position: 0px 0px, 0px 0px;
+  background-size: 80px, 80px;
+  background-repeat: repeat, repeat;
+  background-attachment: scroll, scroll;
+}
+
+.link-block.livesegment {
+  background-image: url('../images/live.png');
+  background-position: 0px 0px;
+  background-size: 80px;
+}
+
+.link-block.livesegment:hover {
+  background-image: url('../images/hover.png'), url('../images/live.png');
+  background-position: 0px 0px, 0px 0px;
+  background-size: 80px, 80px;
+  background-repeat: repeat, repeat;
+  background-attachment: scroll, scroll;
+}
+
+.link-block.artisitspotlight {
+  background-image: url('../images/spotlight.png');
+  background-position: 0px 0px;
+  background-size: 80px;
+}
+
+.link-block.artisitspotlight:hover {
+  background-image: url('../images/hover.png'), url('../images/spotlight.png');
+  background-position: 0px 0px, 0px 0px;
+  background-size: 80px, 80px;
+  background-repeat: repeat, repeat;
+  background-attachment: scroll, scroll;
+}
+
+.link-block.foodtruckfridays {
+  background-image: url('../images/placeholder.png');
+  background-position: 0px 0px;
+  background-size: 80px;
+}
+
+.link-block.foodtruckfridays:hover {
+  background-image: url('../images/hover.png'), url('../images/placeholder.png');
+  background-position: 0px 0px, 0px 0px;
+  background-size: 80px, 80px;
+  background-repeat: repeat, repeat;
+  background-attachment: scroll, scroll;
+}
+
+.link-block.snorkling {
+  background-image: url('../images/placeholder.png');
+  background-position: 0px 0px;
+  background-size: 80px;
+}
+
+.link-block.snorkling:hover {
+  background-image: url('../images/hover.png'), url('../images/placeholder.png');
+  background-position: 0px 0px, 0px 0px;
+  background-size: 80px, 80px;
+  background-repeat: repeat, repeat;
+  background-attachment: scroll, scroll;
+}
+
+.link-block.story {
+  background-image: url('../images/placeholder.png');
+  background-position: 0px 0px;
+  background-size: 80px;
+}
+
+.link-block.story:hover {
+  background-image: url('../images/hover.png'), url('../images/placeholder.png');
+  background-position: 0px 0px, 0px 0px;
+  background-size: 80px, 80px;
+  background-repeat: repeat, repeat;
+  background-attachment: scroll, scroll;
+}
+
+.link-block.travels {
+  background-image: url('../images/placeholder.png');
+  background-position: 0px 0px;
+  background-size: 80px;
+}
+
+.link-block.travels:hover {
+  background-image: url('../images/hover.png'), url('../images/placeholder.png');
+  background-position: 0px 0px, 0px 0px;
+  background-size: 80px, 80px;
+  background-repeat: repeat, repeat;
+  background-attachment: scroll, scroll;
+}
+
+.div-block {
+  float: left;
+}
+
+.text-block.title {
+  margin-top: 16px;
+  margin-left: 16px;
+  font-family: Colfax, sans-serif;
+  color: #000;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.text-block.label {
+  margin-left: 16px;
+  font-family: Colfax, sans-serif;
+  color: #959595;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.row {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.watchsection {
+  margin-bottom: 64px;
+}
+
+.videos {
+  margin-bottom: 20px;
+}
+
+.video {
+  border-radius: 4px;
+}
+
+.column {
+  border-radius: 8px;
+}
+
+.playersection {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1000;
+  width: 100%;
+  height: 48px;
+  background-color: #fff;
+  box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, .16);
+}
+
+.artworkthumb {
+  margin-top: 8px;
+  float: left;
+  border-radius: 2px;
+}
+
+.div-block-2 {
+  width: 250px;
+  height: 40px;
+  margin-top: 7px;
+  margin-left: 8px;
+  float: left;
+}
+
+.playertitle {
+  font-family: Colfax, sans-serif;
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: 500;
+}
+
+.playerlabel {
+  font-family: Colfax, sans-serif;
+  color: #959595;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+}
+
+.controls {
+  display: block;
+  width: 94px;
+  margin-top: 12px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.play {
+  margin-left: 20px;
+}
+
+.next {
+  margin-left: 20px;
+}
+
+.div-block-3 {
+  width: 232px;
+  height: 32px;
+  margin-top: 8px;
+  padding-top: 8px;
+  float: right;
+  text-align: right;
+}
+
+.playertime {
+  float: right;
+  font-family: Colfax, sans-serif;
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: 500;
+}
+
+.volumeicon {
+  margin-top: 1px;
+  float: left;
+}
+
+.volume {
+  width: 122px;
+  height: 2px;
+  margin-top: 7px;
+  margin-left: 24px;
+  background-color: #00ffe0;
+}
+
+.playhero {
+  display: block;
+  width: 88px;
+  height: 88px;
+  margin-top: 188px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 32px;
+  border-radius: 44px;
+  background-color: #fff;
+  box-shadow: 0 0 0 25px hsla(0, 0%, 100%, .32), 0 0 0 50px hsla(0, 0%, 100%, .32);
+}
+
+.playhero:hover {
+  box-shadow: 0 0 0 25px hsla(0, 0%, 100%, .32), 0 0 0 50px hsla(0, 0%, 100%, .32), 0 2px 6px 0 rgba(0, 0, 0, .24);
+}
+
+.image {
+  display: block;
+  width: 24px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 991px) {
+  .link-block {
+    width: 72px;
+    height: 71px;
+  }
+  .link-block.starbucks {
+    height: 72px;
+    background-size: 72px;
+  }
+  .link-block.starbucks:hover {
+    background-size: 72px, 72px;
+  }
+  .link-block.fitbit {
+    background-size: 72px;
+  }
+  .link-block.fitbit:hover {
+    background-size: 72px, 72px;
+  }
+  .link-block.musicinfilm {
+    background-size: 72px;
+  }
+  .link-block.musicinfilm:hover {
+    background-size: 72px, 72px;
+  }
+  .link-block.livesegment {
+    background-size: 72px;
+  }
+  .link-block.livesegment:hover {
+    background-size: 72px, 72px;
+  }
+  .link-block.artisitspotlight {
+    background-size: 72px;
+  }
+  .link-block.artisitspotlight:hover {
+    background-size: 72px, 72px;
+  }
+  .link-block.foodtruckfridays {
+    background-size: 72px;
+  }
+  .link-block.foodtruckfridays:hover {
+    background-size: 72px, 72px;
+  }
+  .link-block.snorkling {
+    background-size: 72px;
+  }
+  .link-block.snorkling:hover {
+    background-size: 72px, 72px;
+  }
+  .link-block.story {
+    background-size: 72px;
+  }
+  .link-block.story:hover {
+    background-size: 72px, 72px;
+  }
+  .link-block.travels {
+    background-size: 72px;
+  }
+  .link-block.travels:hover {
+    background-size: 72px, 72px;
+  }
+  .text-block.title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .h1 {
+    padding-left: 10px;
+  }
+  .playercontainer {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .div-block-2 {
+    width: 195px;
+  }
+  .controls {
+    width: 205px;
+  }
+  .div-block-3 {
+    display: none;
+  }
+  .column-2 {
+    margin-bottom: 24px;
+  }
+  .column-3 {
+    margin-bottom: 24px;
+  }
+  .column-4 {
+    margin-bottom: 24px;
+  }
+  .column-5 {
+    margin-bottom: 24px;
+  }
+  .column-6 {
+    margin-bottom: 24px;
+  }
+  .column-7 {
+    margin-bottom: 24px;
+  }
+  .column-8 {
+    margin-bottom: 20px;
+  }
+  .column-9 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 479px) {
+  .demoreel {
+    height: 354px;
+  }
+  .playercontainer {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .div-block-2 {
+    display: none;
+  }
+  .controls {
+    width: 94px;
+    padding-right: 0px;
+  }
+  .playhero {
+    margin-top: 130px;
+  }
+}
+
+@font-face {
+  font-family: 'Colfax';
+  src: url('../fonts/Colfax-Bold.eot') format('embedded-opentype'), url('../fonts/Colfax-Bold.woff') format('woff'), url('../fonts/Colfax-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Colfax';
+  src: url('../fonts/Colfax-Medium.eot') format('embedded-opentype'), url('../fonts/Colfax-Medium.woff') format('woff'), url('../fonts/Colfax-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Colfax';
+  src: url('../fonts/Colfax-Regular.eot') format('embedded-opentype'), url('../fonts/Colfax-Regular.woff') format('woff'), url('../fonts/Colfax-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
