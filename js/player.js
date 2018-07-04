@@ -25,7 +25,7 @@
 	}
 
 	function renderPlayerTime() {
-		if (currentlyPlaying != null && currentlyPlaying.playing()) {
+		if (currentlyPlaying !== null && currentlyPlaying.playing()) {
 			let currentTime = formatTime(currentlyPlaying.seek());
 			let totalTime = formatTime(currentlyPlaying.duration());
 			playerTime.text(`${currentTime} / ${totalTime}`);
@@ -100,10 +100,10 @@
 			// TODO: Change this
 			image: "images/placeholder.png"
 		}
-	}
+	};
 
 	actionBtn.click(() => {
-		if(currentlyPlaying != null) {
+		if(currentlyPlaying !== null) {
 			if(currentlyPlaying.playing()) {
 				currentlyPlaying.pause();
 			} else {
@@ -119,9 +119,10 @@
 		// Click on each play button
 		$(`#${key}`).click(() => {
 
-			// Stop playing the current clip if there is one
+			// Stop playing and unload the current clip if there is one
 			if (currentlyPlaying !== null) {
 				currentlyPlaying.stop();
+				currentlyPlaying.unload();
 			}
 
 			// Set new current playing

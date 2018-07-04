@@ -310,8 +310,7 @@
 }
 
 #action-btn.playing {
-  /* TODO: Update this to pause; */
-  background-image: url("../images/felix.gif");
+  background-image: url("../images/pause.png");
 }
 
 .back {
