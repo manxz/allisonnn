@@ -17,16 +17,20 @@
 </head>
 <body class="body">
   <div class="playersection">
-    <div class="playercontainer w-container"><img src="images/starbucks.png" width="32" height="32" class="artworkthumb">
+    <div class="playercontainer w-container"><img src="images/starbucks.png" width="32" height="32" id="artworkthumb" class="artworkthumb">
       <div class="div-block-2">
-        <div class="playertitle">Starbucks</div>
-        <div class="playerlabel">Commercial</div>
+        <div id="playertitle" class="playertitle">Starbucks</div>
+        <div id="playerlabel" class="playerlabel">Commercial</div>
       </div>
       <div class="div-block-3 w-clearfix">
-        <div class="playertime">2:26 / 3:56</div><img src="images/volume.png" width="16" class="volumeicon">
+        <div id="playertime" class="playertime">2:26 / 3:56</div><img src="images/volume.png" width="16" class="volumeicon">
         <div class="volume"></div>
       </div>
-      <div class="controls"><img src="images/back-last.png" width="15" class="back"><img src="images/play.png" width="24" class="play"><img src="images/forward-next.png" width="15" class="next"></div>
+      <div class="controls">
+        <div class="back"></div>
+        <div id="action-btn"></div>
+        <div class="next"></div>
+      </div>
     </div>
   </div>
   <div class="nav">
@@ -60,7 +64,7 @@
             <div class="text-block label">Commercial</div>
           </div>
         </div>
-        <div class="w-clearfix w-col w-col-4"><a href="#" id="musicinfilm" class="link-block musicinfilm w-inline-block"></a>
+        <div class="w-clearfix w-col w-col-4"><a href="#" id="music_in_film" class="link-block musicinfilm w-inline-block"></a>
           <div class="div-block">
             <div class="text-block title">Music in Film</div>
             <div class="text-block label">Podcast</div>
@@ -94,7 +98,7 @@
             <div class="text-block label">Podcast</div>
           </div>
         </div>
-        <div class="column-7 w-clearfix w-col w-col-4"><a href="#" id="emberassing_story" class="link-block story w-inline-block"></a>
+        <div class="column-7 w-clearfix w-col w-col-4"><a href="#" id="embarassing_story" class="link-block story w-inline-block"></a>
           <div class="div-block">
             <div class="text-block title">Embarrassing Story</div>
             <div class="text-block label">Podcast</div>

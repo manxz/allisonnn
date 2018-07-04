@@ -295,12 +295,54 @@
   margin-left: auto;
 }
 
-.play {
+#action-btn {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: auto;
   margin-left: 20px;
+  float: left;
+  background-image: url('../images/play.png');
+  background-position: 0px 0px;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+#action-btn.playing {
+  /* TODO: Update this to pause; */
+  background-image: url("../images/felix.gif");
+}
+
+.back {
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin-top: 7px;
+  margin-right: auto;
+  margin-left: auto;
+  float: left;
+  background-image: url('../images/back-last.png');
+  background-position: 0px 0px;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+
 }
 
 .next {
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin-top: 7px;
+  margin-right: auto;
   margin-left: 20px;
+  float: left;
+  background-image: url('../images/forward-next.png');
+  background-position: 0px 0px;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 
 .div-block-3 {
