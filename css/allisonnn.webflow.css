@@ -106,13 +106,13 @@
 }
 
 .link-block.musicinfilm {
-  background-image: url('../images/placeholder.png');
+  background-image: url('../images/musicfilm.png');
   background-position: 0px 0px;
   background-size: 80px;
 }
 
 .link-block.musicinfilm:hover {
-  background-image: url('../images/hover.png'), url('../images/placeholder.png');
+  background-image: url('../images/hover.png'), url('../images/musicfilm.png');
   background-position: 0px 0px, 0px 0px;
   background-size: 80px, 80px;
   background-repeat: repeat, repeat;
@@ -148,13 +148,13 @@
 }
 
 .link-block.foodtruckfridays {
-  background-image: url('../images/placeholder.png');
+  background-image: url('../images/foodtruck.png');
   background-position: 0px 0px;
   background-size: 80px;
 }
 
 .link-block.foodtruckfridays:hover {
-  background-image: url('../images/hover.png'), url('../images/placeholder.png');
+  background-image: url('../images/hover.png'), url('../images/foodtruck.png');
   background-position: 0px 0px, 0px 0px;
   background-size: 80px, 80px;
   background-repeat: repeat, repeat;
@@ -162,13 +162,13 @@
 }
 
 .link-block.snorkling {
-  background-image: url('../images/placeholder.png');
+  background-image: url('../images/snorkling.png');
   background-position: 0px 0px;
   background-size: 80px;
 }
 
 .link-block.snorkling:hover {
-  background-image: url('../images/hover.png'), url('../images/placeholder.png');
+  background-image: url('../images/hover.png'), url('../images/snorkling.png');
   background-position: 0px 0px, 0px 0px;
   background-size: 80px, 80px;
   background-repeat: repeat, repeat;
@@ -176,13 +176,13 @@
 }
 
 .link-block.story {
-  background-image: url('../images/placeholder.png');
+  background-image: url('../images/story.png');
   background-position: 0px 0px;
   background-size: 80px;
 }
 
 .link-block.story:hover {
-  background-image: url('../images/hover.png'), url('../images/placeholder.png');
+  background-image: url('../images/hover.png'), url('../images/story.png');
   background-position: 0px 0px, 0px 0px;
   background-size: 80px, 80px;
   background-repeat: repeat, repeat;
@@ -190,13 +190,13 @@
 }
 
 .link-block.travels {
-  background-image: url('../images/placeholder.png');
+  background-image: url('../images/travels.png');
   background-position: 0px 0px;
   background-size: 80px;
 }
 
 .link-block.travels:hover {
-  background-image: url('../images/hover.png'), url('../images/placeholder.png');
+  background-image: url('../images/hover.png'), url('../images/travels.png');
   background-position: 0px 0px, 0px 0px;
   background-size: 80px, 80px;
   background-repeat: repeat, repeat;

@@ -47,12 +47,11 @@
 			label: "Podcast",
 			image: "images/spotlight.png"
 		},
-		embarassing_story: {
-			file: "audio/Embarassing Story.mp3",
+		story: {
+			file: "audio/Story.mp3",
 			title: "Embarassing Story",
 			label: "Podcast",
-			// TODO: Change this
-			image: "images/placeholder.png"
+			image: "images/story.png"
 		},
 		fitbit: {
 			file: "audio/Fitbit.mp3",
@@ -64,8 +63,7 @@
 			file: "audio/Food Truck Fridays.mp3",
 			title: "Food Truck Fridays",
 			label: "Interview",
-			// TODO: Change this
-			image: "images/placeholder.png"
+			image: "images/foodtruck.png"
 		},
 		live_segment: {
 			file: "audio/Live Segment.mp3",
@@ -77,15 +75,13 @@
 			file: "audio/Music in Film.mp3",
 			title: "Music in Film",
 			label: "Podcast",
-			// TODO: Change this
-			image: "images/placeholder.png"
+			image: "images/musicfilm.png"
 		},
 		snorkling: {
 			file: "audio/Snorkling Story.mp3",
 			title: "Snorkling Story",
 			label: "Podcast",
-			// TODO: Change this
-			image: "images/placeholder.png"
+			image: "images/snorkling.png"
 		},
 		starbucks: {
 			file: "audio/Starbucks.mp3",
@@ -97,8 +93,7 @@
 			file: "audio/Travels.mp3",
 			title: "Travles",
 			label: "Podcast",
-			// TODO: Change this
-			image: "images/placeholder.png"
+			image: "images/travels.png"
 		}
 	};
 
