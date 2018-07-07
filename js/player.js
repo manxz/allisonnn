@@ -42,55 +42,55 @@
 	// Mapping from button ID to audio clip file
 	const audioClips = {
 		artist_spotlight: {
-			file: `${FILE_PATH}audio/Artist Spotlight.mp3`,
+			file: `${FILE_PATH}audio/artist_spotlight.mp3`,
 			title: "Artist Spotlight",
 			label: "Podcast",
 			image: "images/spotlight.png"
 		},
 		story: {
-			file: "audio/Story.mp3",
+			file: `${FILE_PATH}audio/Story.mp3`,
 			title: "Embarassing Story",
 			label: "Podcast",
 			image: "images/story.png"
 		},
 		fitbit: {
-			file: `${FILE_PATH}audio/Fitbit.mp3`,
+			file: `${FILE_PATH}audio/fitbit.mp3`,
 			title: "Fitbit",
 			label: "Commercial",
 			image: "images/fitbit.png"
 		},
 		food_truck: {
-			file: `${FILE_PATH}audio/Food Truck Fridays.mp3`,
+			file: `${FILE_PATH}audio/food_truck_fridays.mp3`,
 			title: "Food Truck Fridays",
 			label: "Interview",
 			image: "images/foodtruck.png"
 		},
 		live_segment: {
-			file: `${FILE_PATH}audio/Live Segment.mp3`,
+			file: `${FILE_PATH}audio/live_segment.mp3`,
 			title: "Live Segment",
 			label: "Collab Podcast",
 			image: "images/live.png"
 		},
 		music_in_film: {
-			file: `${FILE_PATH}audio/Music in Film.mp3`,
+			file: `${FILE_PATH}audio/music_in_film.mp3`,
 			title: "Music in Film",
 			label: "Podcast",
 			image: "images/musicfilm.png"
 		},
 		snorkling: {
-			file: `${FILE_PATH}audio/Snorkling Story.mp3`,
+			file: `${FILE_PATH}audio/snorkling_story.mp3`,
 			title: "Snorkling Story",
 			label: "Podcast",
 			image: "images/snorkling.png"
 		},
 		starbucks: {
-			file: `${FILE_PATH}audio/Starbucks.mp3`,
+			file: `${FILE_PATH}audio/starbucks.mp3`,
 			title: "Starbucks",
 			label: "Commercial",
 			image: "images/starbucks.png"
 		},
 		travels:{
-			file: `${FILE_PATH}audio/Travels.mp3`,
+			file: `${FILE_PATH}audio/travels.mp3`,
 			title: "Travels",
 			label: "Podcast",
 			image: "images/travels.png"
