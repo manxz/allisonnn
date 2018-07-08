@@ -2,96 +2,96 @@
 
 (() => {
 
-	// Currently playing howler
-	var currentlyPlaying = null;
+	// update this const with the url of the server hosting the audio
+	const FILE_PATH = 'http://localhost:8080/';
 
-	// Dom elements
-	let playerTime = $("#playertime");
-	let playerTitle = $("#playertitle");
-	let playerLabel = $("#playerlabel");
-	let artworkThumb = $("#artworkthumb");
-	let actionBtn = $("#action-btn");
+	let currentlyPlaying = null;
+
+	// JQ Dom elements
+	const playerTime = $("#playertime");
+	const playerTitle = $("#playertitle");
+	const playerLabel = $("#playerlabel");
+	const artworkThumb = $("#artworkthumb");
+	const actionBtn = $("#action-btn");
 
 	function formatTime(totalSeconds) {
-		let minutes = Math.floor(totalSeconds / 60);
-		let seconds = Math.round(totalSeconds % 60);
-		let secondsStr;
+		const minutes = Math.floor(totalSeconds / 60);
+		const seconds = Math.round(totalSeconds % 60);
+
 		if (seconds < 10) {
-			secondsStr = `0${seconds}`;
-		} else {
-			secondsStr = seconds;
+			const secondsStr = `0${seconds}`;
+			return `${minutes}:${secondsStr}`
 		}
-		return `${minutes}:${secondsStr}`
+
+		return `${minutes}:${seconds}`
 	}
 
 	function renderPlayerTime() {
 		if (currentlyPlaying !== null && currentlyPlaying.playing()) {
-			let currentTime = formatTime(currentlyPlaying.seek());
-			let totalTime = formatTime(currentlyPlaying.duration());
-			playerTime.text(`${currentTime} / ${totalTime}`);
+			const currentTime = formatTime(currentlyPlaying.seek());
+			const totalTime = formatTime(currentlyPlaying.duration());
 
+			playerTime.text(`${currentTime} / ${totalTime}`);
 			actionBtn.addClass("playing");
 			window.requestAnimationFrame(renderPlayerTime);
-		} 
-		// No longer playing 
-		else {
+		} else {
 			actionBtn.removeClass("playing");
 		}
 	}
 
 	// Mapping from button ID to audio clip file
-	let audioClips = {
+	const audioClips = {
 		artist_spotlight: {
-			file: "audio/Artist Spotlight.mp3",
+			file: `${FILE_PATH}audio/artist_spotlight.mp3`,
 			title: "Artist Spotlight",
 			label: "Podcast",
 			image: "images/spotlight.png"
 		},
 		story: {
-			file: "audio/Story.mp3",
+			file: `${FILE_PATH}audio/story.mp3`,
 			title: "Embarassing Story",
 			label: "Podcast",
 			image: "images/story.png"
 		},
 		fitbit: {
-			file: "audio/Fitbit.mp3",
+			file: `${FILE_PATH}audio/fitbit.mp3`,
 			title: "Fitbit",
 			label: "Commercial",
 			image: "images/fitbit.png"
 		},
 		food_truck: {
-			file: "audio/Food Truck Fridays.mp3",
+			file: `${FILE_PATH}audio/food_truck_fridays.mp3`,
 			title: "Food Truck Fridays",
 			label: "Interview",
 			image: "images/foodtruck.png"
 		},
 		live_segment: {
-			file: "audio/Live Segment.mp3",
+			file: `${FILE_PATH}audio/live_segment.mp3`,
 			title: "Live Segment",
 			label: "Collab Podcast",
 			image: "images/live.png"
 		},
 		music_in_film: {
-			file: "audio/Music in Film.mp3",
+			file: `${FILE_PATH}audio/music_in_film.mp3`,
 			title: "Music in Film",
 			label: "Podcast",
 			image: "images/musicfilm.png"
 		},
 		snorkling: {
-			file: "audio/Snorkling Story.mp3",
+			file: `${FILE_PATH}audio/snorkling_story.mp3`,
 			title: "Snorkling Story",
 			label: "Podcast",
 			image: "images/snorkling.png"
 		},
 		starbucks: {
-			file: "audio/Starbucks.mp3",
+			file: `${FILE_PATH}audio/starbucks.mp3`,
 			title: "Starbucks",
 			label: "Commercial",
 			image: "images/starbucks.png"
 		},
 		travels:{
-			file: "audio/Travels.mp3",
-			title: "Travles",
+			file: `${FILE_PATH}audio/travels.mp3`,
+			title: "Travels",
 			label: "Podcast",
 			image: "images/travels.png"
 		}
@@ -109,8 +109,8 @@
 
 	// Set all click events on each play button
 	Object.keys(audioClips).forEach((key) => {
+		const audioInfo = audioClips[key];
 
-		let audioInfo = audioClips[key];
 		// Click on each play button
 		$(`#${key}`).click(() => {
 
@@ -135,7 +135,5 @@
 			playerLabel.text(audioInfo.label);
 			artworkThumb.attr("src", audioInfo.image);
 		});
-
 	});
-
 })();
