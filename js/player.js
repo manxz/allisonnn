@@ -48,7 +48,7 @@
 			image: "images/spotlight.png"
 		},
 		story: {
-			file: `${FILE_PATH}audio/Story.mp3`,
+			file: `${FILE_PATH}audio/story.mp3`,
 			title: "Embarassing Story",
 			label: "Podcast",
 			image: "images/story.png"
