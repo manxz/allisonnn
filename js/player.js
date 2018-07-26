@@ -114,6 +114,13 @@
 		// Click on each play button
 		$(`#${key}`).click(() => {
 
+			// TODO: How do you check?
+			// If current file is playing, just pause it.
+			if(currentlyPlaying.file === audioInfo) {
+			  currentlyPlaying.pause();
+			  return;
+			}
+			
 			// Stop playing and unload the current clip if there is one
 			if (currentlyPlaying !== null) {
 				currentlyPlaying.stop();
